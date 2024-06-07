@@ -10,7 +10,6 @@
 body {
   background: #ab8ff0 url("../images/t.jpg") repeat-x;
   background-size: 46%;
- 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,17 +24,19 @@ h1 {
   margin-bottom: 0.5rem;
   font-size: 1.75rem;
 }
-h3{
+
+h3 {
   color: #fff;
   text-align: center;
   margin-bottom: 10px;
 }
+
 .TodoWrapper {
   background: linear-gradient( rgba(36, 31, 31, 0.1), rgba(167, 161, 161, 0));
   backdrop-filter: blur;
   -webkit-backdrop-filter: blur(10px);
- border:rgba(207, 98, 98, 0.18);
- box-shadow: 0 8px 32px 0 rgb(198, 18, 171);
+  border: rgba(207, 98, 98, 0.18);
+  box-shadow: 0 8px 32px 0 rgb(198, 18, 171);
   margin-top: 5rem;
   padding: 2rem;
   border-radius: 10px;
@@ -72,9 +73,11 @@ h3{
   cursor: pointer;
   opacity: 0.6;
 }
-.todo-btn:hover{
+
+.todo-btn:hover {
   opacity: 1;
 }
+
 .Todo {
   display: flex;
   justify-content: space-between;
@@ -95,34 +98,69 @@ h3{
   cursor: pointer;
 }
 
-
 .Todo {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
- 
 }
 
 .Todo input[type="checkbox"] {
   margin-right: 10px;
- 
 }
 
 .Todo .completed-text {
   color: #d75555f4;
   text-decoration: line-through;
-  background:url(../images/com.jpg);
+  background: url(../images/com.jpg);
 }
 
-.Todo .edit-icon, .Todo .delete-icon {
+.Todo .edit-icon,
+.Todo .delete-icon {
   cursor: pointer;
   margin-left: 5px;
 }
-
 
 .edit-icon,
 .delete-icon {
   cursor: pointer;
 }
- 
+
+/* Responsive styles for laptop */
+@media only screen and (max-width: 1024px) {
+  .TodoForm {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .todo-input {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Responsive styles for tablet */
+@media only screen and (max-width: 768px) {
+  .TodoForm {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .todo-input {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+/* Responsive styles for mobile */
+@media only screen and (max-width: 480px) {
+  .TodoForm {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .todo-input {
+    width: 100%;
+    max-width: 200px;
+  }
+}
