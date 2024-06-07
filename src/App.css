@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ab8ff0 url("../images/t.jpg") repeat-x;
+  background-size: 46%;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+h3{
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.TodoWrapper {
+  background: linear-gradient( rgba(36, 31, 31, 0.1), rgba(167, 161, 161, 0));
+  backdrop-filter: blur;
+  -webkit-backdrop-filter: blur(10px);
+ border:rgba(207, 98, 98, 0.18);
+ box-shadow: 0 8px 32px 0 rgb(198, 18, 171);
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid #e27feb;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #ffffff4d;
+}
+
+.todo-btn {
+  background: #cdde60;
+  text-shadow: 2px 2px 5px red;
+  border-radius: 15px;
+  color: #26119a;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.todo-btn:hover{
+  opacity: 1;
+}
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #589eff;
+  color: #353131;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.incompleted {
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.Todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+ 
+}
+
+.Todo input[type="checkbox"] {
+  margin-right: 10px;
+ 
+}
+
+.Todo .completed-text {
+  color: #d75555f4;
+  text-decoration: line-through;
+  background:url(../images/com.jpg);
+}
+
+.Todo .edit-icon, .Todo .delete-icon {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+}
+ 
